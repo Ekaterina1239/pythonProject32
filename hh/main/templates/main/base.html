@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <p>{{ user.username }}</p>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+</body>
+</html>

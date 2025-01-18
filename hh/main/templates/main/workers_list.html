@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Start_page
+{% endblock title %}
+
+{% block content %}
+{% for worker in workers%}
+    {{worker.name}}
+    {{worker.surname}}
+    {{worker.experience_year}}
+    {{worker.vacancy}}
+{% endfor %}
+<p><a href="{% url 'log_out' %}"> Log Out  </a></p>
+<p><a href="{% url 'register' %}"> Sign Up </a></p>
+<p><a href="{% url 'log_in' %}"> Log In  </a></p>
+
+{% endblock content %}
